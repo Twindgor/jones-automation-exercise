@@ -1,17 +1,20 @@
 {
-  "name": "jones",
+  "name": "jones-automation-exercise",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Playwright tests for the Jones landing page form",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node automation.js"
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "report": "playwright show-report"
+  },
+  "engines": {
+    "node": ">=18"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
-    "playwright": "^1.64.1"
+    "@playwright/test": "^1.64.1"
   }
 }
